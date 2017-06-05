@@ -470,7 +470,7 @@ h2 ~ p{
 
 @media (max-width: 702px){
 	.h1{
-		font-color: #000000;
+		color: #000000 !important;
 		font-weight: 900;
 		font-size: 300px;
 	}
