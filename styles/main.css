@@ -21,10 +21,14 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
-.max-width-wrapper{
-	max-width: 1280px;
+.width-wrapper{
+	width: 1200px;
+	margin: 0 auto;
 }
 
+.h1{
+	color: red;
+}
 /*------------------------------HEADER PAGE-----------------------------*/
 .header{
 	height: 100vh;
@@ -40,10 +44,11 @@ body{
 /**********MENU**********/
 .navigation{
 	height: 13vh;
-	width: 100%;
+	width: 100vw;
 	background-color: #ffffff;
 	position: fixed;
-	/*display: none;*/
+	z-index: 1000000;
+	display: none;
 }
 
 .nav-row{
@@ -360,12 +365,113 @@ h2 ~ p{
 .plans{
 	background-color: #202242;
 	color: #ffffff;
+	height: 250px;
+	vertical-align: center;
+	display: flex;
+	align-items: center;
 }
 
-.plans > div{
+.plans > div > div{
 	float: left;
 }
 
-.plans > input{
+.plans p{
+	color: #67687b;
+}
 
+.plans-bttn{
+	border: 2.5px solid #ffffff;
+	background-color: #ffe13e;
+	padding: 20px 30px;
+	font-weight: 600;
+	float: right;
+}
+
+/*.plans > input{
+	float: right;
+}*/
+
+.bottom-nav{
+	background-color: #363855;
+	height: 100vh;
+	position: relative;
+}
+
+.map-wrapper{
+	float: left;
+	height: 100%;
+}
+
+.map{
+	text-align: center;
+	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.pointer{
+	display: block;
+	top: 58%;
+	transform: translateY(-50%);
+	margin-left: 530px;
+}
+
+.map, .pointer{
+	position: absolute;
+}
+
+.bottom-menu{
+	height: 100vh;
+	text-align: right;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bottom-nav nav{
+	float: right;
+	color: white;
+}
+
+.bottom-nav nav ul{
+	list-style: none;
+}
+
+.bottom-nav nav p{
+	font-weight: 600;
+}
+
+.bottom-menu p:first-of-type{
+	margin-bottom: 25px;
+}
+
+.bottom-menu li{
+	margin-bottom: 20px;
+}
+
+.bottom-menu li:not(:nth-of-type(5)):after{
+	content: "";
+	display: block;
+	background-color: #565870;
+	float: right;
+	margin-top: 10px;
+	width: 70%;
+	height: 1px;
+}
+
+.bottom-menu a{
+	color: #ffffff;
+}
+
+[class*="icon-"]{
+	color: #ffe13e;
+}
+
+
+@media (max-width: 702px){
+	.h1{
+		font-color: #000000;
+		font-weight: 900;
+		font-size: 300px;
+	}
 }
