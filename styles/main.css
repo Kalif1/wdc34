@@ -312,6 +312,7 @@ h2 ~ p{
 /*-----------------OUR CLIENTS--------------*/
 .clients{
 	height: 100vh;
+	width: 100%;
 	padding-top: 50px;
 }
 
@@ -333,7 +334,7 @@ h2 ~ p{
 .testimonials-row{
 	display: flex;
 	justify-content: space-between;
-	width: 1250px;
+	max-width: 1250px;
 	margin: 150px auto;
 }
 
@@ -468,10 +469,3 @@ h2 ~ p{
 }
 
 
-@media (max-width: 702px){
-	.h1{
-		color: #000000 !important;
-		font-weight: 900;
-		font-size: 300px;
-	}
-}
